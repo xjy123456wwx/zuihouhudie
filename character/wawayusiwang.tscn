@@ -1,53 +1,53 @@
 [gd_scene format=3 uid="uid://bptm5mt28tbi5"]
 
-[ext_resource type="Texture2D" uid="uid://cfhmbxuxampav" path="res://8895ceaf9d1b46b747fa0af0608706af.png" id="1_dyw5l"]
+[ext_resource type="Texture2D" uid="uid://cntn74aamxfvn" path="res://8895ceaf9d1b46b747fa0af0608706af.png" id="1_m8ge4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kl4v0"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(0, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bduws"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(331, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iu13t"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(662, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sep7j"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(993, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ubh63"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(1324, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6qjvd"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(1655, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v77ft"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(1986, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qnlqk"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(2317, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t4oaj"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(2648, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8jeef"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(2979, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yk3ak"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(3310, 0, 331, 476)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hkxef"]
-atlas = ExtResource("1_dyw5l")
+atlas = ExtResource("1_m8ge4")
 region = Rect2(3641, 0, 331, 476)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g52bh"]
