@@ -199,16 +199,16 @@ frame = 8
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1227685028]
-visible = false
 position = Vector2(1, 294.25)
 shape = SubResource("RectangleShape2D_gfdbu")
 
 [node name="huashugongji" type="AnimatedSprite2D" parent="." unique_id=1363657502]
-visible = false
+position = Vector2(1, -36)
 sprite_frames = SubResource("SpriteFrames_b3kgn")
-frame_progress = 0.5936535
+frame = 3
+frame_progress = 0.34599546
+offset = Vector2(198, -11)
 
 [node name="huashudaiji" type="AnimatedSprite2D" parent="." unique_id=1876418241]
-visible = false
 sprite_frames = SubResource("SpriteFrames_t5vk1")
 frame_progress = 0.35944474

@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://suq6t1qrr4p"]
+
+[ext_resource type="Texture2D" uid="uid://bry3bregm3q7n" path="res://assert/724a01af03629d576fced30abba87b80.png" id="1_as4px"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckqgr"]
+atlas = ExtResource("1_as4px")
+region = Rect2(7, 24, 905, 1020)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwgf7"]
+atlas = ExtResource("1_as4px")
+region = Rect2(912, 24, 905, 1020)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u864s"]
+atlas = ExtResource("1_as4px")
+region = Rect2(1817, 24, 905, 1020)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gypdp"]
+atlas = ExtResource("1_as4px")
+region = Rect2(2722, 24, 905, 1020)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctmpc"]
+atlas = ExtResource("1_as4px")
+region = Rect2(7, 1112, 905, 1020)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xgef"]
+atlas = ExtResource("1_as4px")
+region = Rect2(912, 1112, 905, 1020)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcbby"]
+atlas = ExtResource("1_as4px")
+region = Rect2(1817, 1112, 905, 1020)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cp05l"]
+atlas = ExtResource("1_as4px")
+region = Rect2(2722, 1112, 905, 1020)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nrxuj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckqgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwgf7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u864s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gypdp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctmpc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xgef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcbby")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cp05l")
+}],
+"loop": false,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u5p1m"]
+radius = 80.0
+height = 738.0
+
+[node name="Area2D" type="Area2D" unique_id=650166426]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1748015167]
+sprite_frames = SubResource("SpriteFrames_nrxuj")
+frame = 7
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=829417880]
+shape = SubResource("CapsuleShape2D_u5p1m")
