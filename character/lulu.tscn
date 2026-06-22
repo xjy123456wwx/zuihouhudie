@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://dbaar27i6ont"]
+
+[ext_resource type="Texture2D" uid="uid://cm20yqts6idmf" path="res://assert/79852cab47be4e15bc03864db8f4c2b4.png" id="1_n8lns"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6p5l"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(0, 994, 867, 994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5wv5"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(867, 994, 867, 994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjxul"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(1734, 994, 867, 994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8exx"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(2601, 994, 867, 994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxug2"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(0, 0, 867, 994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oh74e"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(867, 0, 867, 994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqy3k"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(1734, 0, 867, 994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vasg7"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(2601, 0, 867, 994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_innuq"]
+atlas = ExtResource("1_n8lns")
+region = Rect2(3468, 0, 867, 994)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fxasu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6p5l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5wv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjxul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8exx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxug2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oh74e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqy3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vasg7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_innuq")
+}],
+"loop": true,
+"name": &"gongji zoulu",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n8lns"]
+radius = 76.448875
+height = 646.0
+
+[node name="Area2D" type="Area2D" unique_id=960926264]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=585880950]
+sprite_frames = SubResource("SpriteFrames_fxasu")
+animation = &"gongji zoulu"
+frame_progress = 0.37470406
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=128031771]
+visible = false
+position = Vector2(-27, 57)
+rotation = 0.44738522
+shape = SubResource("CapsuleShape2D_n8lns")
