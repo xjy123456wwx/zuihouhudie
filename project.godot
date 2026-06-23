@@ -13,7 +13,11 @@ config_version=5
 config/name="新建游戏项目"
 run/main_scene="uid://dhehcb5mt8fno"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://liuchengyu/icon.svg"
+
+[global_group]
+
+player=""
 
 [input]
 
