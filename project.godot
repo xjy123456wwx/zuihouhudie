@@ -73,6 +73,12 @@ dialogic_default_action={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="emeny"
+2d_physics/layer_6="地面"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -80,4 +86,4 @@ dialogic_default_action={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"
+viewport/hdr_2d=true

@@ -122,10 +122,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u5p1m"]
-radius = 80.0
-height = 738.0
+radius = 271.00952
+height = 942.6377
 
-[node name="Area2D" type="Area2D" unique_id=650166426]
+[node name="Area2D" type="Area2D" unique_id=650166426 groups=["enemy"]]
+collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1748015167]
 sprite_frames = SubResource("SpriteFrames_nrxuj")
@@ -134,5 +135,6 @@ autoplay = "zoulu"
 frame_progress = 0.58167356
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=829417880]
-visible = false
+position = Vector2(-31, 5.000001)
+rotation = 0.45249158
 shape = SubResource("CapsuleShape2D_u5p1m")

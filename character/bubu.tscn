@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cciymb6febvgs" path="res://assert/30ac25e15e518ded47a6d5444cd5322c.png" id="1_2kscm"]
 [ext_resource type="Texture2D" uid="uid://b7i7bjvjsli54" path="res://assert/e1c9cee01595e40d0b6ec2423ca524f0.png" id="2_0qxph"]
+[ext_resource type="PackedScene" uid="uid://bifitddetoqf6" path="res://componet/hurt_decect.tscn" id="4_qjmpm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5gknh"]
 atlas = ExtResource("1_2kscm")
@@ -143,16 +144,21 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hrbbe"]
-radius = 118.34272
+radius = 239.03348
 
-[node name="Area2D" type="Area2D" unique_id=239057982]
+[node name="Area2D" type="Area2D" unique_id=239057982 groups=["enemy"]]
+collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1908511089]
 sprite_frames = SubResource("SpriteFrames_dgypq")
 animation = &"gongji"
-frame_progress = 0.37337688
+frame = 4
+frame_progress = 0.62899697
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=494879067]
-visible = false
-position = Vector2(4, -100)
+position = Vector2(-45, -242)
 shape = SubResource("CircleShape2D_hrbbe")
+
+[node name="HurtDecect" parent="." unique_id=2135552218 instance=ExtResource("4_qjmpm")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtDecect" unique_id=592221100]

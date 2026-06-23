@@ -97,7 +97,8 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_dyw5l"]
 radius = 52.95281
 
-[node name="Area2D" type="Area2D" unique_id=1422551269]
+[node name="Area2D" type="Area2D" unique_id=1422551269 groups=["enemy"]]
+collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=957219418]
 sprite_frames = SubResource("SpriteFrames_g52bh")

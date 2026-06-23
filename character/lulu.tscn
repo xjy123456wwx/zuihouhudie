@@ -1,6 +1,29 @@
 [gd_scene format=3 uid="uid://dbaar27i6ont"]
 
+[ext_resource type="Texture2D" uid="uid://cw5dvs712ruhe" path="res://texiao/114ab6df5141e050e7bb947ba387b91d.png" id="1_k6p5l"]
 [ext_resource type="Texture2D" uid="uid://cm20yqts6idmf" path="res://assert/79852cab47be4e15bc03864db8f4c2b4.png" id="1_n8lns"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_x5wv5"]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 2
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_fjxul"]
+colors = PackedColorArray(0.16109648, 0.27894965, 0.13392305, 0.20392157, 0.28434026, 0.46959668, 0.11426953, 0.23921569)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_v8exx"]
+gradient = SubResource("Gradient_fjxul")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nxug2"]
+particle_flag_disable_z = true
+angle_min = 180.00002
+angle_max = 180.00002
+spread = 17.034
+gravity = Vector3(0, 98, 0)
+scale_max = 1.5
+color_ramp = SubResource("GradientTexture1D_v8exx")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k6p5l"]
 atlas = ExtResource("1_n8lns")
@@ -74,10 +97,23 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n8lns"]
-radius = 76.448875
-height = 646.0
+radius = 240.9618
+height = 968.2236
 
-[node name="Area2D" type="Area2D" unique_id=960926264]
+[node name="Area2D" type="Area2D" unique_id=960926264 groups=["enemy"]]
+collision_layer = 2
+collision_mask = 33
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=636534544]
+material = SubResource("CanvasItemMaterial_x5wv5")
+position = Vector2(-148, 43)
+amount = 26
+texture = ExtResource("1_k6p5l")
+lifetime = 2.0
+speed_scale = 2.28
+explosiveness = 0.18
+randomness = 0.67
+process_material = SubResource("ParticleProcessMaterial_nxug2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=585880950]
 sprite_frames = SubResource("SpriteFrames_fxasu")
@@ -85,7 +121,6 @@ animation = &"gongji zoulu"
 frame_progress = 0.37470406
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=128031771]
-visible = false
-position = Vector2(-27, 57)
+position = Vector2(16, 68)
 rotation = 0.44738522
 shape = SubResource("CapsuleShape2D_n8lns")

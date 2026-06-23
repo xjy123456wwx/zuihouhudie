@@ -2,8 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://b1pwhm71yj3ks" path="res://489df70d8d416748e03083ca1075a7ed.png" id="1_ljh14"]
 [ext_resource type="Texture2D" uid="uid://cw5dvs712ruhe" path="res://texiao/114ab6df5141e050e7bb947ba387b91d.png" id="1_qgtsd"]
-[ext_resource type="Shader" uid="uid://b8dmpsp1ta4p3" path="res://texiao/shandian.tres" id="3_xrv5c"]
-[ext_resource type="Texture2D" uid="uid://dljw7wu5yxss0" path="res://texiao/a2045014d7882c8c188a710525885afb.jpg" id="4_xrv5c"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_varjr"]
 blend_mode = 1
@@ -14,9 +12,9 @@ particles_anim_loop = false
 
 [sub_resource type="Gradient" id="Gradient_xrv5c"]
 offsets = PackedFloat32Array(0.03220339, 1)
-colors = PackedColorArray(0.056398593, 0.13453263, 0.07662486, 0.58431375, 0.1481367, 0.062185585, 0.21700668, 0.78039217)
+colors = PackedColorArray(0.056398593, 0.13453263, 0.07662486, 0.58431375, 0.11689881, 0.114970766, 0.056412756, 0.78039217)
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_q2sgv"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qgtsd"]
 gradient = SubResource("Gradient_xrv5c")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_l1n4d"]
@@ -26,7 +24,7 @@ angle_max = 180.00002
 spread = 17.034
 gravity = Vector3(0, 98, 0)
 scale_max = 1.5
-color_ramp = SubResource("GradientTexture1D_q2sgv")
+color_ramp = SubResource("GradientTexture1D_qgtsd")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o6sdb"]
 atlas = ExtResource("1_ljh14")
@@ -58,14 +56,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gd3gx"]
-radius = 42.0
-height = 310.0
+radius = 126.0
+height = 348.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_l1n4d"]
-shader = ExtResource("3_xrv5c")
-shader_parameter/basic_texture = ExtResource("4_xrv5c")
-
-[node name="Area2D" type="Area2D" unique_id=475050778]
+[node name="Area2D" type="Area2D" unique_id=475050778 groups=["enemy"]]
+collision_layer = 2
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=211588990]
 material = SubResource("CanvasItemMaterial_varjr")
@@ -86,12 +81,5 @@ animation = &"zoulu"
 autoplay = "zoulu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1371050782]
-visible = false
-position = Vector2(-35, 90)
+position = Vector2(-8, 9)
 shape = SubResource("CapsuleShape2D_gd3gx")
-
-[node name="Line2D" type="Line2D" parent="." unique_id=1401134483]
-material = SubResource("ShaderMaterial_l1n4d")
-points = PackedVector2Array(-3, -634, -6, 630)
-width = 150.0
-texture_mode = 2

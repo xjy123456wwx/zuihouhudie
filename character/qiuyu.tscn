@@ -122,10 +122,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_asjru"]
-radius = 58.0
-height = 166.0
+radius = 125.0
+height = 270.0
 
-[node name="Area2D" type="Area2D" unique_id=1234697558]
+[node name="Area2D" type="Area2D" unique_id=1234697558 groups=["enemy"]]
+collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1443979505]
 sprite_frames = SubResource("SpriteFrames_smmge")
@@ -133,5 +134,5 @@ animation = &"gun"
 frame_progress = 0.6170769
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1929504663]
-position = Vector2(0, 55)
+position = Vector2(-15, 68)
 shape = SubResource("CapsuleShape2D_asjru")

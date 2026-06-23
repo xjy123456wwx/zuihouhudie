@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://crup4ihibp6w6"]
 
-[ext_resource type="Texture2D" path="res://693f9406462fceba210f0cfcc8a0908f.png" id="1_rokp8"]
+[ext_resource type="Texture2D" uid="uid://cwumhldkbudko" path="res://693f9406462fceba210f0cfcc8a0908f.png" id="1_rokp8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d7rqd"]
 atlas = ExtResource("1_rokp8")
@@ -53,10 +53,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rokp8"]
-radius = 329.0
-height = 938.0
+radius = 426.7707
+height = 1548.2776
 
 [node name="Area2D" type="Area2D" unique_id=1890073884]
+collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=347047565]
 sprite_frames = SubResource("SpriteFrames_kp7xt")
@@ -65,5 +66,6 @@ frame = 5
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1671705819]
-position = Vector2(65, 509)
+position = Vector2(108.99999, 391)
+rotation = 0.34072056
 shape = SubResource("CapsuleShape2D_rokp8")
