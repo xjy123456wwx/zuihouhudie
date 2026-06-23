@@ -6,10 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://b3v38mism00nx" path="res://assert/playrun.png" id="3_yw30f"]
 [ext_resource type="Texture2D" uid="uid://b55ockhcbht6f" path="res://assert/playbuzhuo.png" id="5_qjkh3"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yw30f"]
-radius = 106.0
-height = 390.0
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_e7oew"]
 atlas = ExtResource("2_g1dw6")
 region = Rect2(0, 0, 1008, 1134)
@@ -238,15 +234,19 @@ animations = [{
 "speed": 13.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yw30f"]
+radius = 170.0
+height = 486.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qjkh3"]
+radius = 168.0
+height = 496.0
+
 [node name="player" type="CharacterBody2D" unique_id=1176976964]
 script = ExtResource("1_rkbax")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1503454197]
 zoom = Vector2(0.2, 0.2)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=669133239]
-position = Vector2(-2, -243)
-shape = SubResource("CapsuleShape2D_yw30f")
 
 [node name="walkAnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=895206769]
 position = Vector2(0, -240)
@@ -278,4 +278,24 @@ position = Vector2(-4, -230)
 sprite_frames = SubResource("SpriteFrames_1s1yo")
 animation = &"buzhuo"
 autoplay = "buzhuo"
+frame = 7
+frame_progress = 1.0
 offset = Vector2(184, -280)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=669133239]
+position = Vector2(-2, -243)
+shape = SubResource("CapsuleShape2D_yw30f")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=2011569056]
+position = Vector2(248, -272)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=1500835179]
+position = Vector2(-250, 26)
+shape = SubResource("CapsuleShape2D_qjkh3")
+
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
+[connection signal="area_exited" from="HurtBox" to="." method="_on_hurt_box_area_exited"]
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
+[connection signal="body_exited" from="HurtBox" to="." method="_on_hurt_box_body_exited"]
+[connection signal="body_shape_entered" from="HurtBox" to="." method="_on_hurt_box_body_shape_entered"]

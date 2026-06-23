@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://suq6t1qrr4p"]
 
 [ext_resource type="Texture2D" uid="uid://bry3bregm3q7n" path="res://assert/724a01af03629d576fced30abba87b80.png" id="1_as4px"]
+[ext_resource type="Texture2D" uid="uid://c60eapd3e33es" path="res://assert/2b40aaaca6a5ebc0087f817b8c4516c4.png" id="2_ckqgr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ckqgr"]
 atlas = ExtResource("1_as4px")
@@ -34,6 +35,34 @@ region = Rect2(1817, 1112, 905, 1020)
 atlas = ExtResource("1_as4px")
 region = Rect2(2722, 1112, 905, 1020)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrxuj"]
+atlas = ExtResource("2_ckqgr")
+region = Rect2(13, 0, 922, 1015)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5p1m"]
+atlas = ExtResource("2_ckqgr")
+region = Rect2(935, 0, 922, 1015)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2lfbm"]
+atlas = ExtResource("2_ckqgr")
+region = Rect2(1857, 0, 922, 1015)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hphg1"]
+atlas = ExtResource("2_ckqgr")
+region = Rect2(2779, 0, 922, 1015)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1i1ej"]
+atlas = ExtResource("2_ckqgr")
+region = Rect2(13, 1090, 922, 1015)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e21q6"]
+atlas = ExtResource("2_ckqgr")
+region = Rect2(935, 1090, 922, 1015)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37na1"]
+atlas = ExtResource("2_ckqgr")
+region = Rect2(1857, 1090, 922, 1015)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_nrxuj"]
 animations = [{
 "frames": [{
@@ -62,20 +91,50 @@ animations = [{
 "texture": SubResource("AtlasTexture_cp05l")
 }],
 "loop": false,
-"name": &"default",
+"name": &"gongji",
 "speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrxuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5p1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2lfbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hphg1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1i1ej")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e21q6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37na1")
+}],
+"loop": true,
+"name": &"zoulu",
+"speed": 6.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u5p1m"]
-radius = 80.0
-height = 738.0
+radius = 271.00952
+height = 942.6377
 
-[node name="Area2D" type="Area2D" unique_id=650166426]
+[node name="Area2D" type="Area2D" unique_id=650166426 groups=["enemy"]]
+collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1748015167]
 sprite_frames = SubResource("SpriteFrames_nrxuj")
-frame = 7
-frame_progress = 1.0
+animation = &"zoulu"
+autoplay = "zoulu"
+frame_progress = 0.58167356
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=829417880]
+position = Vector2(-31, 5.000001)
+rotation = 0.45249158
 shape = SubResource("CapsuleShape2D_u5p1m")
