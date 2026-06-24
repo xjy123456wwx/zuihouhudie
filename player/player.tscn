@@ -245,9 +245,6 @@ height = 496.0
 [node name="player" type="CharacterBody2D" unique_id=1176976964]
 script = ExtResource("1_rkbax")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1503454197]
-zoom = Vector2(0.2, 0.2)
-
 [node name="walkAnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=895206769]
 position = Vector2(0, -240)
 sprite_frames = SubResource("SpriteFrames_knn7v")

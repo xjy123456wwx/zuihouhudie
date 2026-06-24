@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dwbsvprvh60i8"]
+
+[ext_resource type="Script" uid="uid://dldm506khu438" path="res://room.gd" id="1_88gup"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bisa2"]
+
+[node name="Room" type="Node2D" unique_id=1851999581]
+script = ExtResource("1_88gup")
+
+[node name="RoomArea" type="Area2D" parent="." unique_id=615255838]
+
+[node name="CameraBoundary" type="CollisionShape2D" parent="RoomArea" unique_id=180954601]
+shape = SubResource("RectangleShape2D_bisa2")

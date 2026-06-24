@@ -10,14 +10,10 @@ config_version=5
 
 [application]
 
-config/name="新建游戏项目"
+config/name="6.24.2.0"
 run/main_scene="uid://dhehcb5mt8fno"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://liuchengyu/icon.svg"
-
-[global_group]
-
-player=""
 
 [autoload]
 
@@ -39,6 +35,10 @@ layout/style_directory={}
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[global_group]
+
+player=""
 
 [input]
 
@@ -81,6 +81,8 @@ dialogic_default_action={
 
 2d_physics/layer_1="player"
 2d_physics/layer_2="emeny"
+2d_physics/layer_3="box"
+2d_physics/layer_4="elevator"
 2d_physics/layer_6="地面"
 
 [physics]

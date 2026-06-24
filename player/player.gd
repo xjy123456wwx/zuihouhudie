@@ -1,15 +1,11 @@
 extends CharacterBody2D
 
 const gravity = 2000
-<<<<<<< HEAD
-const speed_walk = 500
-const speed_run = 800
-const jump_force = 1600
-=======
+
 const speed_walk = 800
 const speed_run = 1550
 const jump_force = 1800
->>>>>>> 0731c74b6ee14610036e72e5ef42638d7132a332
+
 
 var max_jumps = 2
 var jumps_remaining = max_jumps
