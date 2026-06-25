@@ -33138,6 +33138,7 @@ position = Vector2(23832, -7387)
 player = NodePath("../player")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1404938961]
+visible = false
 
 [node name="PointLight2D8" type="PointLight2D" parent="Node2D" unique_id=1619049992]
 position = Vector2(8376.5, 403.75006)
@@ -34107,6 +34108,7 @@ collision_layer = 2
 collision_mask = 33
 
 [node name="AllRoomMaskRoot" type="Node2D" parent="." unique_id=170959651 node_paths=PackedStringArray("player", "area_room4", "area_room6")]
+visible = false
 z_index = 100
 script = ExtResource("48_vf5s1")
 player = NodePath("../player")
@@ -34314,6 +34316,7 @@ position = Vector2(-925, 12)
 shape = SubResource("RectangleShape2D_kbc8h")
 
 [node name="Room2" parent="." unique_id=203948432 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(11261, 1766)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34326,6 +34329,7 @@ shape = SubResource("RectangleShape2D_hoa4f")
 debug_color = Color(0.87289125, 0.11284482, 0.7968725, 0.41960785)
 
 [node name="Room3" parent="." unique_id=1416136154 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(15979, 184)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34337,6 +34341,7 @@ position = Vector2(102, 2012.5)
 shape = SubResource("RectangleShape2D_r810o")
 
 [node name="Room4" parent="." unique_id=821255497 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(17445, 1134)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34349,6 +34354,7 @@ shape = SubResource("RectangleShape2D_y0oy4")
 debug_color = Color(0.17535204, 0.64362854, 1.92523e-07, 0.41960785)
 
 [node name="Room6" parent="." unique_id=1589289415 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(20326, -2743)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34360,6 +34366,7 @@ position = Vector2(6232.5, -878.5)
 shape = SubResource("RectangleShape2D_1eqno")
 
 [node name="Room7" parent="." unique_id=587978272 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(14664, -3741)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34372,6 +34379,7 @@ shape = SubResource("RectangleShape2D_2tdjo")
 debug_color = Color(0.7745621, 0.44197807, 7.70092e-07, 0.41960785)
 
 [node name="Room8" parent="." unique_id=1925754943 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(1278, -7790)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34384,6 +34392,7 @@ shape = SubResource("RectangleShape2D_cdr8t")
 debug_color = Color(0.99999994, 0.016176216, 0.023119703, 0.41960785)
 
 [node name="Room9" parent="." unique_id=1732244011 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(17970, -5220)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34396,6 +34405,7 @@ shape = SubResource("RectangleShape2D_fgoq5")
 debug_color = Color(0, 0.6377004, 0.39275852, 0.41960785)
 
 [node name="Room10" parent="." unique_id=32008995 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(20792, -6857)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34407,6 +34417,7 @@ position = Vector2(448.25, -32.5)
 shape = SubResource("RectangleShape2D_uy42e")
 
 [node name="Room11" parent="." unique_id=337194500 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(11357, -8002)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34419,6 +34430,7 @@ shape = SubResource("RectangleShape2D_4ybrj")
 debug_color = Color(0.65595114, 0.32406, 1, 0.41960785)
 
 [node name="Room12" parent="." unique_id=1804504950 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(25934, -8071)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34431,6 +34443,7 @@ shape = SubResource("RectangleShape2D_8lyow")
 debug_color = Color(0.9551597, 1.347661e-06, 0.54720944, 0.41960785)
 
 [node name="Room14" parent="." unique_id=849526745 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(21649, -3038)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34442,6 +34455,7 @@ position = Vector2(-679.5, 444.5)
 shape = SubResource("RectangleShape2D_g1eev")
 
 [node name="Room5" parent="." unique_id=936545101 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(7010, -5687)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
@@ -34453,6 +34467,7 @@ position = Vector2(-248.5, 3.5)
 shape = SubResource("RectangleShape2D_u17t7")
 
 [node name="Room" parent="." unique_id=2083270945 node_paths=PackedStringArray("room_area", "camera_boundary") instance=ExtResource("49_tt3ss")]
+visible = false
 position = Vector2(26431, -2293)
 room_area = NodePath("Area2D")
 camera_boundary = NodePath("Area2D/CollisionShape2D")
