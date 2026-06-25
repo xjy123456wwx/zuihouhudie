@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="6.24.2.0"
+config/name="project"
 run/main_scene="uid://dhehcb5mt8fno"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://liuchengyu/icon.svg"

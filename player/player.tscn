@@ -242,7 +242,18 @@ height = 486.0
 radius = 168.0
 height = 496.0
 
-[node name="player" type="CharacterBody2D" unique_id=1176976964]
+[sub_resource type="Gradient" id="Gradient_qjkh3"]
+offsets = PackedFloat32Array(0, 0.30182928, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.9634146, 0.9634146, 0.9634146, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g6k8r"]
+gradient = SubResource("Gradient_qjkh3")
+fill = 1
+fill_from = Vector2(0.51282054, 0.53276354)
+fill_to = Vector2(0.8319088, 0.21652421)
+
+[node name="player" type="CharacterBody2D" unique_id=1176976964 groups=["player"]]
+collision_mask = 46
 script = ExtResource("1_rkbax")
 
 [node name="walkAnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=895206769]
@@ -290,6 +301,12 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=1500835179]
 position = Vector2(-250, 26)
 shape = SubResource("CapsuleShape2D_qjkh3")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1619503929]
+position = Vector2(-30.999939, -212)
+scale = Vector2(38.265625, 31.437502)
+color = Color(0.9411765, 1, 0.79607844, 1)
+texture = SubResource("GradientTexture2D_g6k8r")
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_exited" from="HurtBox" to="." method="_on_hurt_box_area_exited"]
